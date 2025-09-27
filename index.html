@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- User panel -->
+    <div class="user-panel" id="userPanel">
+        <h2 class="user-panel-title">Tizimga kirish</h2>
+
+        <div class="user-id-panel">
+            <p class="pId">ID: </p> 
+            <input class="user-id" placeholder="ID raqamingizni kiriting (1-10)" id="userId" type="number">
+        </div>
+        <div class="user-name-panel">
+            <p>Ismingiz va familiyangiz:</p>
+            <input type="text" class="user-name" placeholder="Ismingiz va familiyangizni yozing" id="userName">
+        </div>
+        <p class="forgot-admin" id="forgotAdmin">Admin sifatida kirish</p>
+
+        <button class="user-button" id="userButton">KIRISH</button>
+
+        </p>
+    </div>
+
+    <div class="admin-panel hidden" id="adminPanel">
+        <h2 class="admin-panel-title">Admin paneli</h2>
+
+        <div class="admin-id-panel">
+            <p class="pId">ID: </p> 
+            <input class="admin-id" placeholder="ID raqamingizni kiriting (1-10)" id="adminId" type="number">
+        </div>
+        <div class="admin-name-panel">
+            <p>Ismingiz va familiyangiz:</p>
+            <input type="text" class="admin-name" placeholder="Ismingiz va familiyangizni yozing" id="adminName">
+        </div>
+        <p class="forgot-user" id="forgotUser">Foydalanuvchi sifatida kirish</p>
+
+        <button class="admin-button" id="adminButton">KIRISH</button>
+
+        </p>
+    </div>
+
+    <div class="hidden" id="information">
+        <div class="main-information">
+            <p>id: <span class="id"></span></p>
+            <h3>name: <span class="mName"></span></h3>
+            <p>email: <span class="email"></span></p>
+            <p>phone: <span class="phone"></span></p>
+            <p>website: <span class="website"></span></p>
+        </div>
+
+        <div>
+            <h4 class="address">address</h4>
+            <p>street: <span class="street"></span></p>
+            <p>suite: <span class="suite"></span></p>
+            <p>city: <span class="city"></span></p>
+            <p>zipcode: <span class="zipcode"></span></p>
+
+            <div class="geo">
+                <p>lat: <span class="lat"></span></p>
+                <p>lng: <span class="lng"></span></p>
+            </div>
+        </div>
+
+        <div>
+            <h4 class="company">Company:</h4>
+            <p>name: <span class="cName"></span></p>
+            <p>catchPhrase: <span class="catchPrase"></span></p>
+            <p>bs: <span class="bs"></span></p>
+        </div>
+    </div>
+
+    <div class="usserContainer">
+        <ul class="userLiContainer" id="usersContainer"></ul>
+    </div>
+    <template id="usersTemplate">
+        <li class="userListLi">
+            <div class="usertempdiv">
+                <p class="userPID"></p>
+
+                <h5 class="userTitle"></h5>
+            </div>
+
+            <p class="userNametitle"></p>
+
+            <p class="userWebsite"></p>
+        </li>
+    </template>
+
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>
