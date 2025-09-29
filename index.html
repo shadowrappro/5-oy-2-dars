@@ -16,8 +16,8 @@
             <input class="user-id" placeholder="ID raqamingizni kiriting (1-10)" id="userId" type="number">
         </div>
         <div class="user-name-panel">
-            <p>Ismingiz va familiyangiz:</p>
-            <input type="text" class="user-name" placeholder="Ismingiz va familiyangizni yozing" id="userName">
+            <p>username: </p>
+            <input type="text" class="user-name" placeholder="usernameingizni yozing" id="userName">
         </div>
         <p class="forgot-admin" id="forgotAdmin">Admin sifatida kirish</p>
 
@@ -34,8 +34,8 @@
             <input class="admin-id" placeholder="ID raqamingizni kiriting (1-10)" id="adminId" type="number">
         </div>
         <div class="admin-name-panel">
-            <p>Ismingiz va familiyangiz:</p>
-            <input type="text" class="admin-name" placeholder="Ismingiz va familiyangizni yozing" id="adminName">
+            <p>username:</p>
+            <input type="text" class="admin-name" placeholder="usernameingizni yozing" id="adminName">
         </div>
         <p class="forgot-user" id="forgotUser">Foydalanuvchi sifatida kirish</p>
 
@@ -44,37 +44,38 @@
         </p>
     </div>
 
-    <div class="hidden" id="information">
+    <div class="userInformation hidden" id="information">
         <div class="main-information">
-            <p>id: <span class="id"></span></p>
-            <h3>name: <span class="mName"></span></h3>
-            <p>email: <span class="email"></span></p>
-            <p>phone: <span class="phone"></span></p>
-            <p>website: <span class="website"></span></p>
+            <p>id: <span class="u-id" id="uID"></span></p>
+            <h3>name: <span class="mName" id="mName"></span></h3>
+            <p>email: <span class="email" id="email"></span></p>
+            <p>phone: <span class="phone" id="phone"></span></p>
+            <p>website: <span class="website" id="website"></span></p>
         </div>
 
-        <div>
+        <div class="address-information">
             <h4 class="address">address</h4>
-            <p>street: <span class="street"></span></p>
-            <p>suite: <span class="suite"></span></p>
-            <p>city: <span class="city"></span></p>
-            <p>zipcode: <span class="zipcode"></span></p>
+            <p>street: <span class="street" id="street"></span></p>
+            <p>suite: <span class="suite" id="suite"></span></p>
+            <p>city: <span class="city" id="city"></span></p>
+            <p>zipcode: <span class="zipcode" id="zipcode"></span></p>
 
             <div class="geo">
-                <p>lat: <span class="lat"></span></p>
-                <p>lng: <span class="lng"></span></p>
+                <p>lat: <span class="lat" id="lat"></span></p>
+                <p>lng: <span class="lng" id="lng"></span></p>
             </div>
         </div>
 
-        <div>
+        <div class="company-information">
             <h4 class="company">Company:</h4>
-            <p>name: <span class="cName"></span></p>
-            <p>catchPhrase: <span class="catchPrase"></span></p>
-            <p>bs: <span class="bs"></span></p>
+            <p>name: <span class="cName" id="cName"></span></p>
+            <p>catchPhrase: <span class="catchPrase" id="catchPrase"></span></p>
+            <p>bs: <span class="bs" id="bs"></span></p>
         </div>
     </div>
 
-    <div class="usserContainer">
+
+    <div class="usserContainer hidden" id="usserContainer">
         <ul class="userLiContainer" id="usersContainer"></ul>
     </div>
     <template id="usersTemplate">

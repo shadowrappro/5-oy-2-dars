@@ -17,6 +17,10 @@ export function uiChangerUsers(data) {
         elUserTitle.innerText = element.username;
         elUserWebsite.innerText = element.website;
         elLi.id = element.id
+        elTitle.id = element.id
+        elUID.id = element.id;
+        elUserTitle.id = element.id;
+        elUserWebsite.id = element.id
 
         elUserContainer.append(clone)
     });
